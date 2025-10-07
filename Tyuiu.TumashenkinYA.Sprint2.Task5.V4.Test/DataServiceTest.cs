@@ -1,5 +1,5 @@
-﻿using Tyuiu.TumashenkinYA.Sprint2.Task5.V6.Lib;
-namespace Tyuiu.TumashenkinYA.Sprint2.Task5.V6.Test
+﻿using Tyuiu.TumashenkinYA.Sprint2.Task5.V4.Lib;
+namespace Tyuiu.TumashenkinYA.Sprint2.Task5.V4.Test
 {
     [TestClass]
     public sealed class DataServiceTest
@@ -9,9 +9,8 @@ namespace Tyuiu.TumashenkinYA.Sprint2.Task5.V6.Test
         {
             DataService ds = new DataService();
             int value1 = 1;
-            int value2 = 6;
-            string res = ds.FindCardNameAndValue(value1, value2);
-            string wait = "шестёрка пик";
+            string res = ds.FindCardSuit(value1);
+            string wait = "пик";
             Assert.AreEqual(wait, res);
         }
     }

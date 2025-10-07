@@ -1,4 +1,4 @@
-﻿using Tyuiu.TumashenkinYA.Sprint2.Task5.V6.Lib;
+﻿using Tyuiu.TumashenkinYA.Sprint2.Task5.V4.Lib;
 
 Console.Title = "Спринт #2 | Выполнил: Тумашенкин Я. А. | ПКТб-25-1";
 Console.WriteLine("***************************************************************************");
@@ -18,15 +18,12 @@ Console.WriteLine("*************************************************************
 DataService ds = new DataService();
 
 Console.WriteLine("Введите номер масти: ");
-int value1 = Convert.ToInt32(Console.ReadLine());
-
-Console.WriteLine("Введите номер достоинства карты: ");
-int value2 = Convert.ToInt32(Console.ReadLine());
+int value = Convert.ToInt32(Console.ReadLine());
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
 
-var result = ds.FindCardNameAndValue(value1, value2);
+var result = ds.FindCardSuit(value);
 Console.WriteLine(result);
 Console.ReadKey();
