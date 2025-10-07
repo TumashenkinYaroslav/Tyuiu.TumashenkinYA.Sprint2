@@ -11,16 +11,16 @@ namespace Tyuiu.TumashenkinYA.Sprint2.Task5.V4.Lib
             switch (value)
             {
                 case 1:
-                    suit = "пик";
+                    suit = "пики";
                     break;
                 case 2:
-                    suit = "треф";
+                    suit = "трефы";
                     break;
                 case 3:
-                    suit = "бубен";
+                    suit = "бубны";
                     break;
                 case 4:
-                    suit = "червей";
+                    suit = "черви";
                     break;
                 default:
                     throw new ArgumentException($"Масть карты должна быть от 1 до 4.Значение{value}");
