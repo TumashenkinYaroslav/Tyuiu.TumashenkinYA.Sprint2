@@ -16,7 +16,7 @@ Console.WriteLine("*************************************************************
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
 DataService ds = new DataService();
-Console.WriteLine(" Месяц начала года: ");
+Console.WriteLine(" Введите год ");
 var MSY = Convert.ToInt32(Console.ReadLine());
 Console.WriteLine(" Сколько прошло месяцев с начала года: ");
 var n = Convert.ToInt32(Console.ReadLine());

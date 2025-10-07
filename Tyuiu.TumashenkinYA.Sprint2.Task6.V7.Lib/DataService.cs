@@ -6,11 +6,11 @@ namespace Tyuiu.TumashenkinYA.Sprint2.Task6.V7.Lib
         public string FindMonthName(int startYear, int n)
         {
 
-            switch ((startYear+n - 1 ) % 12)
+            switch ((n  ) % 12)
             {
                 case 0: return "Январь";
                 case 1: return "Февраль";
-                case 2: return "Март";
+                case 2: return "март";
                 case 3: return "Апрель";
                 case 4: return "Май";
                 case 5: return "Июнь";
