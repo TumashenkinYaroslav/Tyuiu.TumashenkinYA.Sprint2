@@ -1,0 +1,25 @@
+﻿using Tyuiu.TumashenkinYA.Sprint2.Task1.V11.Lib;
+
+Console.Title = "Спринт #2 | Выполнил: Тумашенкин Я. А. | ПКТб-25-1";
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* Спринт #2                                                               *");
+Console.WriteLine("* Тема: Создания итогового решения по спринту                             *");
+Console.WriteLine("* Задание #1                                                              *");
+Console.WriteLine("* Вариант #11                                                             *");
+Console.WriteLine("* Выполнил: Тумашенкин Ярослав Анатольевич | ПКТб-25-1                    *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* УСЛОВИЕ:                                                                *");
+Console.WriteLine("* Написать программу из операций сравненийи арифметических выражений,     *");
+Console.WriteLine("* которая вернет логическую последовательность:                           *");
+Console.WriteLine("*                                                                         *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine(" a = 145, b = 156, c = 142, d = 117 ");
+Console.WriteLine("***************************************************************************");
+Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
+Console.WriteLine("***************************************************************************");
+DataService ds = new DataService();
+var res = ds.GetLogicOperations(145, 156, 142, 117);
+Console.WriteLine(String.Join(",", res));
+Console.ReadKey();
